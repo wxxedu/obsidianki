@@ -10,7 +10,6 @@ class line():
 		self.line_content = line_content
 		self.words = line_content.split(" ")
 		self.file = file
-		showInfo("|".join(self.words))
 		
 	
 	
