@@ -21,11 +21,6 @@ class obsidian_url:
 	
 	def __init__(self, ztk_id, file_object):
 		self.ztk_id = ztk_id
-		self.vault = file_object.get_folder().get_vault()
-		self.file = self.vault.get_file_by_file_ztk_id(ztk_id)
-		self.vault_name = self.vault.get_name()
-		self.file_name = self.file.get_file_name()
-		self.folder_name = remove_file_attribute(self.file.get_folder_name())
 		
 	def gen_obsidian_url(self):
 		vault_url = self.vault_root_url + self.encode(self.vault_name)
